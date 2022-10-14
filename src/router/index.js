@@ -1,11 +1,17 @@
+import "@/assets/main.css";
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import services from '../views/services.vue'
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/services',
+    name: 'services',
+    component:services
   },
   {
     path: '/about',
